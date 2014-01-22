@@ -6,10 +6,12 @@
 Welcome to BORAT RTS2 Manual's documentation!
 =============================================
 
+This is manual is a combination of RTS2 and BORAT documentation.
+
 Contents:
 
-.. toctree::
-   :maxdepth: 2
+* :doc:`Introduction <intro>`
+* :doc:`RTS2 <rts2>`
 
 
 
