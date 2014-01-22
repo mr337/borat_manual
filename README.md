@@ -1,4 +1,3 @@
-borat_manual
-============
+This is the repo for BORAT's manual, normally used my Missouri State University staff and students.
 
-RTS2 Manaul for MSU's BORAT Telescope 
+The rendered version of this is hosted on readthedocs.org
