@@ -12,6 +12,3 @@ Contents:
 
 * :doc:`Introduction <intro>`
 * :doc:`RTS2 <rts2>`
-
-.. toctree::
-    :titlesonly:
