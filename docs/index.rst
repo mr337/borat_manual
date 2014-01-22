@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to BORAT RTS2 Manual's documentation!
-=============================================
+BORAT RTS2 Survival Manual
+=============================
 
 This manual is a combination of RTS2 and BORAT documentation.
 
@@ -20,7 +20,8 @@ Contents:
 
 Other
 -----
-Blog: borat.mr337.com
+Blog: http://borat.mr337.com
+Old Blog: http://roboscope.blogspot.com
 
 Legal
 =====
