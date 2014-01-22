@@ -259,7 +259,7 @@ in the RTS2 driver. This means that the weather sensor will actually make the ca
 if the sky is clear, cloudy, very cloudy. The RTS2 driver simply reads these values
 and informs RTS2 about them. 
 
-Here is a small except of calibrations::
+Here is a small excerpt of calibrations::
 
     ./bwcs_test
     
@@ -396,7 +396,7 @@ Motion Sensors
 
 After failing to find a motion sensor on the market that would fit our needs we
 decided to implement our own. We bought several passive infrared (PIR) sensors
-off sparkfun.com. These sensors were mounted facing roughly 60$^\circ$ apart
+off sparkfun.com. These sensors were mounted facing roughly 60 degrees apart
 to cover each side of the interior fence. 
 
 The idea behind the PIR sensor is when first powered on they will calibrate to

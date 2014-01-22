@@ -6,7 +6,7 @@
 Welcome to BORAT RTS2 Manual's documentation!
 =============================================
 
-This is manual is a combination of RTS2 and BORAT documentation.
+This manual is a combination of RTS2 and BORAT documentation.
 
 **KEEP** in mind this is a work in progress.
 
