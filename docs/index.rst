@@ -18,6 +18,10 @@ Contents:
 * :doc:`Misc <misc>`
 
 
+Other
+-----
+Blog: borat.mr337.com
+
 Legal
 =====
 Any opinions, findings, and conclusions or recommendations expressed in this 
