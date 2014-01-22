@@ -13,12 +13,5 @@ Contents:
 * :doc:`Introduction <intro>`
 * :doc:`RTS2 <rts2>`
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+.. toctree::
+    :titlesonly:

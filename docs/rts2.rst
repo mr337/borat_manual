@@ -150,7 +150,7 @@ Now press ``tab`` to move back into the device list. Select the device called
 EXEC. Press ``tab`` to move into the options for this device. Find the option
 ``ignore_day`` which is near the bottom. We want that value to be true.
 
-.. image:: images/rts2-mon_ignore_day.eps}
+.. image:: images/rts2-mon_ignore_day.png
 
 At this point you may ask why we would want this. This ``ignore_day`` setting
 is a little tricky. You can force the rts2 executor to execute a target during the
@@ -275,12 +275,11 @@ simply type ``now 6000`` and press enter. Now type ``queue 6001`` and press
 enter. You should now see something that looks close to this.
 
 
-.. images:: images/rts2-mon_queue_targets.png
+.. image:: images/rts2-mon_queue_targets.png
 
 For now ignore the red error in the log as I just picked a random star. Ignoring
 this and assuming all hardware is happy and no device is blocking operation,
- such as the weather station,
-the telescope will slew to the target and start taking images.
+such as the weather station, the telescope will slew to the target and start taking images.
 
 This method is so much of a forced or manual running of BORAT. It completely overlooks
 the startup procedure of fan cooling, ccd cooling, and flats/biases. Also running this
