@@ -14,7 +14,8 @@ Contents:
 
 * :doc:`Introduction <intro>`
 * :doc:`RTS2 <rts2>`
-* :doc:`BORAT Specific <borat>`
+* :doc:`Running Borat <operations>`
+* :doc:`BORAT Specific Implementation <borat>`
 * :doc:`Misc <misc>`
 
 
