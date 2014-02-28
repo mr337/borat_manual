@@ -112,7 +112,7 @@ RTS2 stores targets in the database. To look at the targets available use the co
     11 I         nan         nan +00:00 nan          nan         nan transiting Cannot find any INTEGRAL FOV 
     6000 O 05:16:41.520 +45:59:50.93 -11:04 nan  -05 35 26.11 189 33 35.63 rising     Capella
 
-For an example let us look at target Capella with target id of 6000. Use the ``rts2-targetinfo``
+For example, let us look at target Capella with target id of 6000. Use the ``rts2-targetinfo``
 command to get the details of the target.::
 
     mr337@borat: rts2-targetinfo 6000
@@ -135,6 +135,21 @@ to make script modifications. Let us change the script for Capella.::
             C0:'for 100 { E 45 }'
                     |-- expected light time:  1:15:00.000 # images 100
                             \-- expected duration:  1:15:00.000
+
+Here is a couple more examples:
+
+I want to take 50 exposures using the BG40 filter, which I think is in filter position 7.::
+
+    rts2-tartget -c C0 -s 'filter=BG40 for 50 { E 10 }'
+
+I want to take 500 images, in each the B and I filters, using 20 and 35 second exposures, 
+respectively, but want it to cycle between them?::
+
+    rts2-target -c C0 -s "for 500 { filter=BF40 E 20 filter=I E 35 }" 
+
+I want to take 100 5 second exposures, in each filter in the filter wheel starting C filter.::
+
+    filter=C for 100 { E 5 filter+=1 }
 
 Once the target was modified we ran ``rts2-targetinfo`` on the target and the script is
 now updated. The ``rts2-target`` command has other functions like enabling and disabling
@@ -179,8 +194,8 @@ Running the Beast
 At this point hopefully you have the observatory in order and targets to observe.
 If so, we can actually queue some targets.
 
-First thing needed is to set the rts2 to the ON mode. RTS2 has three state,
-Off, Standby, and On. Off and On are self explanatory but Standby is what
+First thing needed is to set the rts2 to the ON mode. RTS2 has three states,
+Off, Standby, and On. Off and On are self explanatory, but Standby is what
 happens when the telescope encounters bad weather or daylight.
 
 Turn on rts2 by pressing F9 while in rts2. In the top left you should see a
@@ -189,16 +204,15 @@ Select On and press enter, you will be prompted to confirm, select yes.
 
 .. image:: images/rts2-mon_turn_on.png
 
-Once rts2 is set to on, check the log to make sure nothing is preventing it
-from commencing operations.
-Things like bad weather, or if a device has failed, will prevent rts2 from
-going to state *On*.
+Once rts2 is set to *On*, check the log to make sure nothing is preventing it
+from commencing operations. Things like bad weather, or if a device has failed, 
+will prevent rts2 from going to state *On*.
 
 Now let us queue some targets. Go to EXEC and ``tab`` to get into the details
-of the device. When in the pane you can also give the device direct commands. For
+of the device. When in the device pane you can also give the device direct commands. For
 this example we will be using the ``now`` and ``queue`` command.
 
-We will force the executor to run target 6000 and queue 6001. In the pane
+We will force the executor to execute target 6000 and queue 6001. In the pane
 simply type ``now 6000`` and press enter. Now type ``queue 6001`` and press
 enter. You should now see something that looks close to this.
 
